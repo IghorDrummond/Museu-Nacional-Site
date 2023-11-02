@@ -1,0 +1,605 @@
+/*Estrutura do Site */
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	background: #f4f2ec url('../img/fundo.png') repeat-x;
+	font: 12px "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;
+}
+.clear{
+	clear: both;
+}
+
+/* Cabeçalho */
+header{
+	position: relative;
+	width: 100%;
+	height: 100px;
+	padding: 25px;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+header>a>div{
+	width: 45%;
+	background: url('../img/logo.png') no-repeat top left;
+	height: 50px;
+	padding-left: 5px;
+	float: left;
+}
+nav{
+	text-align: right;
+	width: 50%;
+	display: block;
+	float: right;
+	background: url("../img/icone.png") no-repeat top right ;
+}
+
+/* Rodapé */
+footer{
+	width: 100vw;
+	height: 80px;
+}
+footer>nav{
+	width: 100%;
+	padding: 15px 0px 0px 0px;
+	text-align: center;
+}
+
+/* Navegação */
+nav>a, #menu_mobile>ul a{
+	display: inline;
+	color: orange;
+	text-decoration: none;
+	margin-left: 15px;
+	font-weight: bold;
+}
+
+/* Navegação Mobile */
+#menu_mobile{
+	width: 48%;
+	height: 100vh;
+	background-color: whitesmoke;
+	border: 2px datted black;
+	position: fixed;
+	text-align: left;
+	padding: 25px;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	display: none;
+}
+#menu_mobile>button{
+	background: none;
+	border: none;
+	color: orange;
+	font-size: 15px;
+	margin-bottom: 25px;
+}
+#menu_mobile>ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+#menu_mobile>ul>li{
+	border-bottom: 2px solid black;
+}
+#menu_botao{
+	-webkit-animation: subindo 0.5s 1;
+	        animation: subindo 0.5s 1;
+	display: none;
+}
+
+/* Corpo de Main */
+main{
+	width: 100vw;
+	height: 100vh;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	min-width: 1024px;
+}
+
+/* capa */
+#capa{
+	width: 100%;
+}
+#capa img{
+	margin: auto;
+	display: block;
+}
+
+/* Area Lateral */
+#area_lateral{
+	width: 20vw;
+	height: 100vh;
+	float: right;
+	margin: auto;
+}
+
+/* area da postagens */
+#area_postagem{
+	width: 80vw;
+	height: 100vh;
+	float: left;
+
+}
+#video{
+	padding-top: 15px;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
+	-webkit-box-align: stretch;
+	    -ms-flex-align: stretch;
+	        align-items: stretch;
+}
+
+/* Area de Conteudo */
+#conteudo{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
+	-webkit-box-align: stretch;
+	    -ms-flex-align: stretch;
+	        align-items: stretch;
+}	
+#conteudo article{
+	width: 300;
+	height: 200px;
+	padding-top: 15px;
+	text-indent: 20px;
+}
+#conteudo article p{
+	padding-top: 5px;
+	width: 300px;
+}
+#conteudo article a{
+	font-weight: bold;
+	text-decoration: none;
+	color: orange;
+}
+#conteudo article>h3{
+	color: green;
+	padding-bottom: 5px ;
+}
+#conteudo article ul {
+	color: orange;
+	padding: 0px;	
+	cursor: pointer;
+}
+
+/* Visita */
+#visita{
+	background-color: gray;
+	width: 350px;
+	height: 250px;
+	margin-top: 10px;
+	text-align: left;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	font-weight: bold;
+	padding: 10px 25px;
+}
+#visita>h2{
+	color: orange;
+	margin-bottom: 15px;
+}
+#data{
+	width: 100px;
+}
+#quant{
+	width: 30px;
+}
+#disponivel{
+	width: 80%;
+	height: 50px;
+	display: block;
+	margin: 25px auto;
+	background-color: darkorange;
+	color: white;
+	font-weight: bold;
+	border: none;
+	cursor: pointer;
+}
+
+/*Galeria de Fotos */
+#galeria{
+	width: 350px;
+	height: 250px;
+	margin-top: 10px;
+	background-color: gray;
+}
+#galeria>h2{
+	color: orange;
+	padding-left: 25px;
+	padding-top: 10px;
+}
+#galeria div>a{
+	background: url('../img/fundo-foto.png') no-repeat;
+	background-size: cover;
+	float: right;
+	width: 100px;
+	height: 100px;
+}
+#galeria div>a>img{
+	width: 70px;
+	height: 70px;
+ 	display: block;
+ 	margin: 17px auto;
+}
+#roleta{
+	width: 60%;
+	margin: auto;
+	height: 80%;
+}
+
+/* rodapé */
+footer{
+	text-align: center;
+	background: url('../img/fundo-rodape.png') no-repeat top center;
+	background-size: 80%;
+}
+footer span{
+	color: orange;
+}
+footer h3{
+	padding-top: 30px;
+}
+
+
+/* Hover nos Elementos */
+nav>a:hover, #menu_mobile>ul>li>a:hover{
+	font-size: 15px;
+	color: #E68000;
+	-webkit-transition: font-size 0.5s, color 0.5s;
+	-o-transition: font-size 0.5s, color 0.5s;
+	-webkit-transition: border-top 0.5s, border-bottom 0.5s, font-size 0.5s, color 0.5s;
+	-o-transition: border-top 0.5s, border-bottom 0.5s, font-size 0.5s, color 0.5s;
+	transition: border-top 0.5s, border-bottom 0.5s, font-size 0.5s, color 0.5s;
+	border-bottom: 2px solid white;
+	border-top: 2px solid white;
+}
+header>a:hover{
+	opacity: 0.5;
+	-webkit-transition: opacity 0.5s;
+	-o-transition: opacity 0.5s;
+	transition: opacity 0.5s;
+}
+#disponivel:hover{
+	-webkit-box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.2);
+	        box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.2);
+	border: 2px groove rgba(0,0,0,0.2);
+}
+#galeria a:hover{
+	width: 93px;
+}
+#menu_botao:active{
+	-webkit-transform: scale(0.0);
+	    -ms-transform: scale(0.0);
+	        transform: scale(0.0);
+	-webkit-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	transition: all 0.2s;
+}
+
+/* Animação */
+@-webkit-keyframes abre{
+	from{
+		opacity: 0;
+		width: 0%;
+	}
+	to{
+		opacity: 1;
+		width: 48%;
+	}
+}
+
+@keyframes abre{
+	from{
+		opacity: 0;
+		width: 0%;
+	}
+	to{
+		opacity: 1;
+		width: 48%;
+	}
+}
+
+@-webkit-keyframes Fecha{
+	from{
+		opacity: 1;
+		width: 48%;
+	}
+	to{
+		opacity: 0;
+		width: 0%;
+	}
+}
+
+@keyframes Fecha{
+	from{
+		opacity: 1;
+		width: 48%;
+	}
+	to{
+		opacity: 0;
+		width: 0%;
+	}
+}
+
+
+/* Scroll da Pagina */
+::-webkit-scrollbar {
+	width: 20px;
+}
+::-webkit-scrollbar-track {
+	background-color: black;
+}		
+::-webkit-scrollbar-thumb {
+	background-color: orange;
+	border-radius: 20px;
+}	
+::-webkit-scrollbar-thumb:hover {
+	background-color: pink;
+	border-top: 2px solid blue;
+	border-left: 2px solid blue;
+	border-right: 2px solid blue;
+	border-bottom: 2px solid blue;
+	-webkit-transition: background-color 2s, border-top 2s, border-left 2s, border-right 2s, border-bottom 2s;
+	transition: background-color 2s, border-top 2s, border-left 2s, border-right 2s, border-bottom 2s;
+}	
+
+/* Ajuste Universal para dispositivos Mobile*/
+@media screen and (min-width: 240px) and (max-width: 480px){
+	header>a>div{
+		width: 45%;
+		background-size: 100%;
+	}
+	main{
+		min-width: 240px;
+		height: auto;
+	}
+	#area_postagem{
+		width: 100%;
+	}
+	#capa{
+		width: 100%;
+	}
+	#capa>img{
+		display: block;
+		margin: auto;
+		width: 100%;
+	}
+	#mapa{
+		width: 100%;
+	}
+	#video article iframe{
+		width: 95%;
+		display: block;
+		margin: auto;
+	}	
+	#video article#mapa iframe{
+		width: 70%;
+		margin: auto;
+		display: block;
+	}
+	#video h3{
+		text-align: center;
+		width: 100%;
+	}
+	#conteudo{
+		display: block;
+		width: 100%;
+	}
+	#conteudo article{
+		width: 95%;
+	}
+	#conteudo article p{
+		width: 90%;
+		text-align: center;
+	}
+	#conteudo article a{
+		text-align: center;
+	}
+	#area_postagem{
+		float: none;
+		height: auto;
+	}
+	#area_lateral{
+		float: none;
+		display: block;
+		width: 100%;
+		height: auto;
+		display: flex;
+		align-items: center;
+		justify-items: center;
+		flex-direction: column;
+	}
+	#area_lateral img{
+		width: 95%;
+	}
+	#galeria{
+		height: auto;
+	}
+	#visita, #galeria{
+		width: 95%;	
+	}
+}
+/* Dispositivos Pequenos */
+@media screen and (min-width: 481px) and (max-width: 767px){
+	header>a>div{
+		width: 45%;
+		background-size: 100%;
+	}
+	main{
+		min-width: 240px;
+		height: auto;
+	}
+	#area_postagem{
+		width: 100%;
+	}
+	#capa{
+		width: 100%;
+	}
+	#capa>img{
+		display: block;
+		margin: auto;
+		width: 100%;
+	}
+	#mapa{
+		width: 100%;
+	}
+	#video article iframe{
+		width: 95%;
+		display: block;
+		margin: auto;
+	}	
+	#video article#mapa iframe{
+		width: 70%;
+		margin: auto;
+		display: block;
+	}
+	#video h3{
+		text-align: center;
+		width: 100%;
+	}
+	#conteudo{
+		display: block;
+		width: 100%;
+	}
+	#conteudo article{
+		width: 95%;
+	}
+	#conteudo article p{
+		width: 90%;
+		text-align: center;
+	}
+	#conteudo article a{
+		text-align: center;
+	}
+	#area_postagem{
+		float: none;
+		height: auto;
+	}
+	#area_lateral{
+		float: none;
+		display: block;
+		width: 100%;
+		height: auto;
+		display: flex;
+		align-items: center;
+		justify-items: center;
+		flex-direction: column;
+	}
+	#area_lateral img{
+		width: 60%;
+	}
+	#galeria{
+		height: auto;
+	}
+	#visita, #galeria{
+		width: 60%;	
+	}
+	footer{
+		width: 100%;
+		height: 25vh;
+	}
+}
+
+/* Dispositivos Tablets */
+@media screen and (min-width: 768px) and (max-width: 991px){
+	header>a>div{
+		width: 45%;
+		background-size: 100%;
+	}
+	main{
+		min-width: 240px;
+		height: auto;
+	}
+	#area_postagem{
+		width: 100%;
+	}
+	#capa{
+		width: 100%;
+	}
+	#capa>img{
+		display: block;
+		margin: auto;
+		width: 100%;
+	}
+	#mapa{
+		width: 100%;
+	}
+	#video article iframe{
+		width: 95%;
+		display: block;
+		margin: auto;
+	}	
+	#video article#mapa iframe{
+		width: 70%;
+		margin: auto;
+		display: block;
+	}
+	#video h3{
+		text-align: center;
+		width: 100%;
+	}
+	#conteudo{
+		display: block;
+		width: 100%;
+	}
+	#conteudo article{
+		width: 95%;
+	}
+	#conteudo article p{
+		width: 90%;
+		text-align: center;
+	}
+	#conteudo article a{
+		text-align: center;
+	}
+	#area_postagem{
+		float: none;
+		height: auto;
+	}
+	#area_lateral{
+		float: none;
+		display: block;
+		width: 100%;
+		height: auto;
+		display: flex;
+		align-items: center;
+		justify-items: center;
+		flex-direction: column;
+	}
+	#area_lateral img{
+		width: 60%;
+	}
+	#galeria{
+		height: auto;
+	}
+	#visita, #galeria{
+		width: 60%;	
+	}
+	footer{
+		width: 100%;
+		height: 40vh;
+	}
+}
+

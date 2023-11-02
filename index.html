@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- Normalize Css -->
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+
+		<!-- Estilo Css -->
+		<link rel="stylesheet" type="text/css" href="css/home.css">
+		<title>Museu Nacional - Home</title>
+
+		<!--[if lt IE 9]>
+			<script src="=js/html5shiv-printshiv.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<header><!-- Inicio do cabeçalho -->
+			<a href="index.html">
+				<div id="" title="Museu Nacional do Brasil"></div>
+			</a>
+			<nav><!-- Inicio da Navegação -->
+				<a id="link1" href="">HOME</a>
+				<a id="link2" href="">EXPOSIÇÕES</a>
+				<a id="link3" href="">PESQUISA</a>
+				<a id="link4" href="">ACERVO</a>
+				<a id="link5" href="">VÍDEOS</a>
+				<a id="link6" href="">FOTOS</a>
+				<a id="link7" href="">CONTATO</a>
+
+				<!-- Caso Houver Mobile, ativar esse menu de navegação-->
+				<button id="menu_botao" onclick="AbreAba()"></button>
+				<div id="menu_mobile"><!--Inicio do Menu Mobile -->
+					<button onclick="FechaAba()">X</button>
+					<ul>
+						<li><a href="">HOME</a></li>
+						<li><a href="">EXPOSIÇÕES</a></li>
+						<li><a href="">PESQUISA</a></li>
+						<li><a href="">ACERVO</a></li>
+						<li><a href="">VÍDEOS</a></li>
+						<li><a href="">FOTOS</a></li>
+						<li><a href="">CONTATO</a></li>
+					</ul>
+
+				</div><!--Fim do Menu Mobile -->
+			</nav><!--Fim da Navegação -->
+		</header><!--  Fim do Cabeçalho -->
+
+		<main><!-- Inicio do Main -->
+			<section id="area_postagem"><!-- Inicio da area de postagem -->
+				<section id="capa">
+					<img src="img/museu.png" title="foto principal" alt="foto de introdução ao site">
+				</section>	
+
+				<section id="video">
+					<article>
+						<h3>Video: Conheça o Museu</h3>
+						<iframe width="350" height="170" src="https://www.youtube.com/embed/RGUYb-hivrc?si=LAvuy-ZiVIt-i536" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>						
+					</article>
+
+					<article id="mapa">
+						<h3>Localização</h3>
+						<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14700.825245036422!2d-43.2265289!3d-22.90576!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997e58a085b7af%3A0x4d11e9a933d38ce3!2sMuseu%20Nacional%20-%20UFRJ!5e0!3m2!1spt-BR!2sbr!4v1698607671261!5m2!1spt-BR!2sbr" width="350" height="170" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>					
+					</article>
+				</section>
+
+				<section id="conteudo">
+					<article>
+						<h3>Exposições</h3>
+						<ul>
+							<li>Os Assuntos Insetos</li>
+							<li>O Crânio de Luzia, a mulher mais antigo do Brasil</li>
+							<li>Preguiça Gigante e tigre-dentes-de-sabre</li>
+							<li>Plantas do Brasil Central</li>																		
+							<li>Teresa Cristina: A Imperatriz Arqueólogas</li>
+							<li>Arte Com Dinossauros - Paleoarte</li>
+							<li><a href="">Veja Todos (65)</a></li>															
+						</ul>
+					</article>
+
+					<article>
+						<h3>200 Anos de História</h3>
+						<p>
+							Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+						</p>		
+						<br>
+						<a href="">Ler Mais</a>				
+					</article>
+				</section>
+			</section><!-- Fim da area de postagem -->
+
+			<aside id="area_lateral"><!-- Inicio do Aside -->
+				<img src="img/depoimento.png" title="Texto referente ao Museu Nacional" height="">
+				<section id="visita">
+					<h2>FAÇA UMA VISITA</h2>
+					<form>
+						<legend>Selecione Uma Data</legend>
+						<label>Data</label>
+						<input id="data" type="date" name="data" placeholder="dd/mm/aaaa">
+						<label>Qtd Pessoas</label>
+						<input type="number" id="quant" name="quant" min="1" value="1">
+						<input type="button" id="disponivel" value="Verificar Disponibilidade">
+					</form>
+				</section>
+
+				<section id="galeria">
+					<h2>GALERIA DE FOTOS</h2>
+					<div id="roleta">
+						<a href="">
+							<img src="img/imagem1.jpg" title="Locais" alt="Salão">
+						</a>
+						<a href="">
+							<img src="img/imagem2.jpg" title="Locais" alt="comodos">
+						</a>
+						<a href="">
+							<img src="img/imagem3.jpg" title="Locais" alt="comodos 2">
+						</a>
+						<a href="">
+							<img src="img/imagem4.jpg" title="Locais" alt="comodos 3">
+						</a>
+						<div class="clear"></div>
+					</div>
+				</section>
+			</aside><!-- Fim do Aside -->
+			<div class="clear"></div>
+		</main><!-- Fim do Main -->
+
+		<footer><!-- Inicio do Rodapé -->
+			<nav><!-- Inicio da Navegação -->
+				<a id="link1" href="">HOME</a>
+				<a id="link2" href="">EXPOSIÇÕES</a>
+				<a id="link3" href="">PESQUISA</a>
+				<a id="link4" href="">ACERVO</a>
+				<a id="link5" href="">VÍDEOS</a>
+				<a id="link6" href="">FOTOS</a>
+				<a id="link7" href="">CONTATO</a>
+			</nav>	
+			<br>
+			<h3> 2019 <span>Museu Nacional</span> - Todos os Direitos Reservados</h3>
+		</footer><!-- Fim do Rodapé -->
+	</body>
+	<!-- Script Js -->
+	<script type="text/javascript" src="js/script.js"></script>
+
+</html>
